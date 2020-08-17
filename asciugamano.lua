@@ -26,8 +26,8 @@ for i in ipairs(Asciugamano_list) do
 	    },	    
         inventory_image = "asciugsmano_a_"..colour..".png",
 	    
-        wield_image  = {"asciugsmano_a_"..colour..".png",
-	    },
+        wield_image  = "asciugsmano_a_"..colour..".png",
+	    
 	    paramtype = "light",
 	    paramtype2 = "facedir",
 	    sunlight_propagates = true,

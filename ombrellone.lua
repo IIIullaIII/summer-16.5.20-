@@ -48,8 +48,8 @@ minetest.register_node("summer:ombrellone_"..colour.."_ch", {
 	    },
         inventory_image = "summer_ombc_"..colour..".png",
 	    
-        wield_image  = {"summer_ombc_"..colour..".png",
-	    },
+        wield_image  = "summer_ombc_"..colour..".png",
+	    
 	    paramtype = "light",
 	    paramtype2 = "facedir",
 	    sunlight_propagates = true,

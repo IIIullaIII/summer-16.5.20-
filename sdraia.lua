@@ -24,8 +24,8 @@ for i in ipairs(sdraia_list) do
 	    },	    
         inventory_image = "sdraia_"..colour.."_inv.png",
 	    
-        wield_image  = {"sdraia_"..colour..".png",
-	    },
+        wield_image  = "sdraia_"..colour..".png",
+	    
 	    paramtype = "light",
 	    paramtype2 = "facedir",
 	    sunlight_propagates = true,
