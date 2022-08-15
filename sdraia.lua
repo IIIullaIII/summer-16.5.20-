@@ -24,15 +24,14 @@ for i in ipairs(sdraia_list) do
 	    },	    
         inventory_image = "sdraia_"..colour.."_inv.png",
 	    
-        wield_image  = "sdraia_"..colour..".png",
-	    
+        wield_image  = {"sdraia_"..colour..".png" },
 	    paramtype = "light",
 	    paramtype2 = "facedir",
 	    sunlight_propagates = true,
 	    walkable = false,
 	    selection_box = {
 	        type = "fixed",
-	        fixed = { 0.5, 0.5,0.5, -0.5,-0.49, -0.5 },
+	        fixed = { 0.4, 0.1,1.0, -0.4,-0.49, -1.0 },
 	    },
 		groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=0},
 		--sounds = default.node_sound_wood_defaults(),
@@ -86,7 +85,7 @@ minetest.sleep_in_sdraia = function( pos, node, clicker, itemstack, pointed_thin
 		clicker:set_eye_offset({x=0,y=0,z=0}, {x=0,y=0,z=0})
 		clicker:set_physics_override(1, 1, 1)
 		default.player_set_animation(clicker, "stand", 30)
-		minetest.chat_send_player( pname, 'That was enough sleep for now. You stand up again.');
+		minetest.chat_send_player( pname, 'You stand up again.');
 		return;
 	end
 
@@ -178,7 +177,7 @@ minetest.sleep_in_sdraia = function( pos, node, clicker, itemstack, pointed_thin
 		if( allow_sleep==true ) then
 			default.player_set_animation(clicker, "lay", 30)
 			clicker:set_eye_offset({x=0,y=-14,z=2}, {x=0,y=0,z=0})
-			minetest.chat_send_player( pname, 'You lie down and take a nap. A right-click will wake you up.');
+			minetest.chat_send_player( pname, 'you lay A right-click will wake you up.');
 			return;
 		-- no sleeping on this place
 		else
@@ -199,20 +198,9 @@ minetest.sleep_in_sdraia = function( pos, node, clicker, itemstack, pointed_thin
 	clicker:set_physics_override(0, 0, 0)
 	default.player_attached[pname] = true
 
-	if( allow_sleep==true) then
-		minetest.chat_send_player( pname, 'Aaah! What a comftable '..place_name..'. A second right-click will let you sleep.');
-	else
-		minetest.chat_send_player( pname, 'Comftable, but not good enough for a nap. Right-click again if you want to get back up.');
-	end
+
 end
 
 
-	minetest.register_craft({
-		output = "summer:sdraia_"..colour.."",
-		recipe = {
-			{"", "wool:"..colour, "", },
-			{"cannabis:canapa_fiber", "cannabis:canapa_plastic", "cannabis:canapa_fiber", },
-			{"", "cannabis:canapa_fiber", "", }
-		}
-	})
+	
 	end

@@ -22,7 +22,7 @@ minetest.register_node("summer:angstairA", {
 			{-0.5, -0.5, -0.5, 0.5, 0, 0.5}, -- NodeBox3
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+    --material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='"summer:mattoneA" 7',
 	--legacy_mineral = true,
@@ -59,7 +59,7 @@ description = "Spigolo_scala_granito_bianco",
 			{-0.5, -0.5, -0.5, 0.5, 0, 0.5}, -- NodeBox3
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+   -- material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattoneA 5',
 	--legacy_mineral = true,
@@ -94,7 +94,7 @@ minetest.register_node("summer:stairA", {
 			{-0.5, -0.5, 0, 0.5, 0.5, 0.5}, -- Node2
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+   -- material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 --	drop ='summer:mattoneA 6',
 	--legacy_mineral = true,
@@ -130,7 +130,7 @@ description = "Battiscopa_granito_bianco",
 			{-0.5, 0, -0.5, 0.5, 0.5, 0.5}, -- NodeBox5
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+  --  material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 --	drop ='summer:mattoneA 8',
 	--legacy_mineral = true,
@@ -165,7 +165,7 @@ minetest.register_node("summer:slabA", {
 		--	{-0.5, -0.5, 0, 0.5, 0.5, 0.5}, -- Node2
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+   -- material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 --	drop ='summer:mattoneA 6',
 	--legacy_mineral = true,
@@ -205,7 +205,7 @@ minetest.register_node("summer:angstairP", {
 			{-0.5, -0.5, -0.5, 0.5, 0, 0.5}, -- NodeBox3
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+  --  material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='"summer:mattoneP" 7',
 	--legacy_mineral = true,
@@ -242,7 +242,7 @@ description = "Spigolo_scala_granito_rosa",
 			{-0.5, -0.5, -0.5, 0.5, 0, 0.5}, -- NodeBox3
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+  --  material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	drop ='summer:mattoneP 5',
 	--legacy_mineral = true,
@@ -277,7 +277,7 @@ minetest.register_node("summer:stairP", {
 			{-0.5, -0.5, 0, 0.5, 0.5, 0.5}, -- Node2
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+  --  material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattoneP 6',
 	--legacy_mineral = true,
@@ -313,7 +313,7 @@ description = "Battiscopa_granito_rosa",
 			{-0.5, 0, -0.5, 0.5, 0.5, 0.5}, -- NodeBox5
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+  --  material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattoneP 8',
 	--legacy_mineral = true,
@@ -348,7 +348,7 @@ minetest.register_node("summer:slabP", {
 		--	{-0.5, -0.5, 0, 0.5, 0.5, 0.5}, -- Node2
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+   -- material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattoneP 6',
 	--legacy_mineral = true,
@@ -388,7 +388,7 @@ minetest.register_node("summer:angstairR", {
 			{-0.5, -0.5, -0.5, 0.5, 0, 0.5}, -- NodeBox3
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+   -- material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	drop ='"summer:mattoneR" 7',
 	--legacy_mineral = true,
@@ -425,7 +425,7 @@ description = "Spigolo_scala_granito_rosso",
 			{-0.5, -0.5, -0.5, 0.5, 0, 0.5}, -- NodeBox3
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+   -- material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattoneR 5',
 	--legacy_mineral = true,
@@ -460,7 +460,7 @@ minetest.register_node("summer:stairR", {
 			{-0.5, -0.5, 0, 0.5, 0.5, 0.5}, -- Node2
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+   -- material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattoneR 6',
 	--legacy_mineral = true,
@@ -496,7 +496,7 @@ description = "Battiscopa_granito_rosso",
 			{-0.5, 0, -0.5, 0.5, 0.5, 0.5}, -- NodeBox5
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+   -- material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattoneR 8',
 	--legacy_mineral = true,
@@ -531,7 +531,7 @@ minetest.register_node("summer:slabR", {
 		--	{-0.5, -0.5, 0, 0.5, 0.5, 0.5}, -- Node2
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+   -- material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattoneR 6',
 	--legacy_mineral = true,
@@ -571,7 +571,7 @@ minetest.register_node("summer:angstair", {
 			{-0.5, -0.5, -0.5, 0.5, 0, 0.5}, -- NodeBox3
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+  --  material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='"summer:mattone" 7',
 	--legacy_mineral = true,
@@ -608,7 +608,7 @@ description = "Spigolo_scala_granito_grigio",
 			{-0.5, -0.5, -0.5, 0.5, 0, 0.5}, -- NodeBox3
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+  --  material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattone 5',
 	--legacy_mineral = true,
@@ -643,7 +643,7 @@ minetest.register_node("summer:stair", {
 			{-0.5, -0.5, 0, 0.5, 0.5, 0.5}, -- Node2
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+  --  material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattone 6',
 	--legacy_mineral = true,
@@ -679,7 +679,7 @@ description = "Battiscopa_granito_grigio",
 			{-0.5, 0, -0.5, 0.5, 0.5, 0.5}, -- NodeBox5
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+ --   material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattone 8',
 	--legacy_mineral = true,
@@ -714,7 +714,7 @@ minetest.register_node("summer:slab", {
 			--{-0.5, -0.5, 0, 0.5, 0.5, 0.5}, -- Node2
 		}
 	},
-    material = minetest.digprop_constanttime(1),
+  --  material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattone 6',
 	--legacy_mineral = true,

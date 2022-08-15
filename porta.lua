@@ -1,14 +1,21 @@
 
 local Porta_list = {
-	{ "Red Porta", "red"},
-	{ "Orange Porta", "orange"},
-    { "Black Porta", "black"},
-	{ "Yellow Porta", "yellow"},
-	{ "Green Porta", "green"},
-	{ "Blue Porta", "blue"},
-	{ "Violet Porta", "violet"},
+	{ "Red Door", "red"},
+	{ "Orange Door", "orange"},
+    { "Black Door", "black"},
+	{ "Yellow Door", "yellow"},
+	{ "Green Door", "green"},
+	{ "Blue Door", "blue"},
+	{ "Violet Door", "violet"},
 }
-
+--[[	{ S("Red Door"), "red"},
+	{ S("Orange Door"), "orange"},
+    { S("Black Door"), "black"},
+	{ S("Yellow Door"), "yellow"},
+	{ S("Green Door"), "green"},
+	{ S("Blue Door"), "blue"},
+	{ S("Violet Door"), "violet"},
+}]]
 for i in ipairs(Porta_list) do
 	local portadesc = Porta_list[i][1]
 	local colour = Porta_list[i][2]
@@ -89,13 +96,6 @@ minetest.register_node("summer:porta_"..colour.."_ch", {
 	    end,
 	})
 
-	minetest.register_craft({
-		output = "summer:porta_"..colour.."_ch",
-		recipe = {
-			{"", "wool:"..colour, "", },
-			{"cannabis:canapa_fiber", "cannabis:canapa_fiber", "cannabis:canapa_fiber", },
-			{"cannabis:canapa_fiber", "cannabis:canapa_fiber", "cannabis:canapa_fiber", }
-		}
-	})
+
 	
 end

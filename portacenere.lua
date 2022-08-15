@@ -67,13 +67,6 @@ minetest.register_node("summer:Portacenere_"..colour.."_ch", {
 	        minetest.set_node(pos, node)
 	    end,
 	})
-	minetest.register_craft({
-		output = "summer:Portacenere_"..colour.."",
-		recipe = {
-			{"cannabis:canapa_fiber", "", "cannabis:canapa_fiber" },
-			{"cannabis:canapa_plastic", "", "cannabis:canapa_plastic" },
-			{"cannabis:canapa_plastic", "wool:"..colour, "cannabis:canapa_plastic" }
-		}
-	})
+
 	
 end

@@ -237,6 +237,7 @@ minetest.register_craftitem(barca_item_name, {
 })
 
 
+if minetest.get_modpath("cannabis") then
 minetest.register_craft({
 	output = barca_item_name,
 	recipe = {
@@ -246,7 +247,15 @@ minetest.register_craft({
 	},
 })
 end
-
+minetest.register_craft({
+	output = barca_item_name,
+	recipe = {
+		{""     , ""   , ""   },
+		{"group:wood", "wool:"..color, "group:wood"},
+		{"group:wood","group:wood","group:wood"},
+	},
+})	
+end
 colors = {
 	"black", "red", "green", "blue", "yellow", "violet","orange",
 }

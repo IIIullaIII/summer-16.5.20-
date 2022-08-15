@@ -236,6 +236,8 @@ minetest.register_craftitem(materassino_item_name, {
 	end,
 })
 
+if minetest.get_modpath("cannabis") then
+
 
 minetest.register_craft({
 	output = materassino_item_name,
@@ -243,6 +245,15 @@ minetest.register_craft({
 		{"", "" ,""},
 		{"", "wool:"..color,            ""},
 		{"cannabis:canapa_plastic", "cannabis:canapa_plastic", "cannabis:canapa_plastic"},
+	},
+})
+end
+minetest.register_craft({
+	output = materassino_item_name,
+	recipe = {
+		{"", "" ,""},
+		{"", "wool:"..color,            ""},
+		{"wool:"..color, "wool:"..color, "wool:"..color},
 	},
 })
 end
@@ -254,3 +265,4 @@ colors = {
 for _,color in ipairs(colors) do
 	reg_materassino(color)
 end
+

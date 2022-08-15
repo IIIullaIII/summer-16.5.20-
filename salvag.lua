@@ -235,8 +235,18 @@ minetest.register_craftitem(salvag_item_name, {
 		return itemstack
 	end,
 })
+minetest.register_craft({
+	output = salvag_item_name,
+	recipe = {
+		{""                       , ""                       , ""                       },
+		{"group:leaves", "wool:"..color,            "group:leaves"},
+		{"default:paper", "group:leaves", "default:paper"},
+	},
+})
 
 
+
+if minetest.get_modpath("cannabis") then
 minetest.register_craft({
 	output = salvag_item_name,
 	recipe = {
@@ -245,6 +255,8 @@ minetest.register_craft({
 		{"cannabis:canapa_plastic", "cannabis:canapa_plastic", "cannabis:canapa_plastic"},
 	},
 })
+
+end
 end
 
 colors = {

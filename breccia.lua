@@ -42,39 +42,4 @@ minetest.register_node("summer:desert_breccia", {
 })  
    
 
-    --craft BRECCIA BLOCK
-	minetest.register_craft({
-		output = '"summer:breccia" 4',
-		recipe = {
-			{ "summer:pietra", "summer:pietra", "summer:pietra" },
-			{ "summer:pietra", "summer:pietra", "summer:pietra" },
-			{ "summer:pietra", "summer:pietra", "summer:pietra" },
-		},
-	})
 
-	minetest.register_craft({
-		output ='"summer:desert_breccia_2" 4',
-		recipe = {
-			{ "summer:desert_pietra", "summer:desert_pietra", "summer:desert_pietra" },
-			{ "summer:desert_pietra", "summer:desert_pietra", "summer:desert_pietra" },
-			{ "summer:desert_pietra", "summer:desert_pietra", "summer:desert_pietra" },
-		},
-	})
-
-	minetest.register_craft({
-		output = '"summer:breccia_2" 4',
-		recipe = {
-			{ "summer:pietraA", "summer:pietraA", "summer:pietraA" },
-			{ "summer:pietraA", "summer:pietraA", "summer:pietraA" },
-			{ "summer:pietraA", "summer:pietraA", "summer:pietraA" },
-		},
-	})
-
-	minetest.register_craft({
-		output = '"summer:desert_breccia" 4',
-		recipe = {
-			{ "summer:pietraP", "summer:pietraP", "summer:pietraP" },
-			{ "summer:pietraP", "summer:pietraP", "summer:pietraP" },
-			{ "summer:pietraP", "summer:pietraP", "summer:pietraP" },
-		},
-	})

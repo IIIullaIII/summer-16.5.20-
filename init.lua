@@ -10,17 +10,20 @@ dofile(path.."/asciugamano.lua")
 if minetest.get_modpath("3d_armor") then
 dofile(path.."/occhiali.lua")
 end
---dofile(path.."/occhiali.lua")
 dofile(path.."/chest.lua")
 dofile(path.."/portacenere.lua")
 dofile(path.."/summerstair.lua")
 dofile(path.."/barche.lua")
 dofile(path.."/granite.lua")
 dofile(path.."/canoa.lua")
+dofile(path.."/craft.lua")
 dofile(path.."/vetro.lua")
---dofile(path.."/piazzare_scale.lua")
+dofile(path.."/aliases.lua")
 dofile(path.."/sabbia.lua")
 dofile(path.."/mattone.lua")
 dofile(path.."/pietra.lua")
 dofile(path.."/pallone.lua")
 dofile(path.."/granite.lua")
+if minetest.get_modpath("cannabis") then
+dofile(path.."/canapa.lua")
+end

@@ -26,8 +26,8 @@ for i in ipairs(Asciugamano_list) do
 	    },	    
         inventory_image = "asciugsmano_a_"..colour..".png",
 	    
-        wield_image  = "asciugsmano_a_"..colour..".png",
-	    
+        wield_image  = {"asciugsmano_a_"..colour..".png",
+	    },
 	    paramtype = "light",
 	    paramtype2 = "facedir",
 	    sunlight_propagates = true,
@@ -208,14 +208,7 @@ minetest.sleep_in_asciugamano = function( pos, node, clicker, itemstack, pointed
 	end
 end
 
-	minetest.register_craft({
-		output = "summer:asciugamano_"..colour.."",
-		recipe = {
-			{"","","", },
-			{"wool:"..colour, "", "", },
-			{"cannabis:canapa_fiber", "cannabis:canapa_fiber", "cannabis:canapa_fiber", }
-		}
-	})
+	
 	
 end
     --state=true: lay, state=false: stand up

@@ -237,6 +237,18 @@ minetest.register_craftitem(canoa_item_name, {
 })
 
 
+
+--canoa
+minetest.register_craft({
+	output = canoa_item_name,
+	recipe = {
+		{""                       , ""                       , ""                       },
+		{""                       , "wool:"..color,            ""                       },
+		{"group:wood","group:wood","group:wood"},
+	},
+})
+
+if minetest.get_modpath("cannabis") then
 minetest.register_craft({
 	output = canoa_item_name,
 	recipe = {
@@ -245,6 +257,7 @@ minetest.register_craft({
 		{"cannabis:canapa_plastic", "cannabis:canapa_plastic", "cannabis:canapa_plastic"},
 	},
 })
+end
 end
 
 colors = {

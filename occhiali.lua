@@ -32,16 +32,9 @@ if minetest.get_modpath("summer") then
 			groups = {armor_head=math.floor(5*v.armor), armor_heal=v.heal, armor_use=v.use},
 			wear = 0,
 		})
-minetest.register_craft({
-		output = "summer:occhiali_"..colour.."",
-		recipe = {
-			{"", "wool:"..colour, "", },
-			{"", "cannabis:canapa_fiber", "", },
-			{"cannabis:canapa_plastic", "", "cannabis:canapa_plastic", }
-		}
-	})
-end
+
 end
 end
 
 	
+end

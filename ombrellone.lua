@@ -1,5 +1,6 @@
 local Ombrellone_list = {
 	{ "Red Ombrellone", "red"},
+	{ "White Ombrellone", "white"},
 	{ "Orange Ombrellone", "orange"},
     { "Black Ombrellone", "black"},
 	{ "Yellow Ombrellone", "yellow"},
@@ -18,10 +19,9 @@ for i in ipairs(Ombrellone_list) do
 		mesh = "omb_o.obj",
 	    tiles = {"ball_"..colour..".png",
 	    },	    
-        inventory_image = "summer_ombo_"..colour..".png",
+        inventory_image = "ombo_"..colour.."_q.png",
 	    
-        wield_image  = {"summer_ombo_"..colour..".png",
-	    },
+       wield_image  = {"ombo_"..colour.."_q.png"},
 	    paramtype = "light",
 	    paramtype2 = "facedir",
 	    sunlight_propagates = true,
@@ -30,7 +30,7 @@ for i in ipairs(Ombrellone_list) do
 	        type = "fixed",
 	        fixed = { -0.25, -0.5, -0.25, 0.25,0.5, 0.25 },
 	    },
-		groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3},
+		groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3, not_in_creative_inventory=0},
 		--sounds = default.node_sound_glass_defaults(),
         drop = "summer:ombrellone_"..colour.."_ch",        
 		on_rightclick = function(pos, node, clicker)
@@ -46,10 +46,9 @@ minetest.register_node("summer:ombrellone_"..colour.."_ch", {
 		mesh = "omb_c.obj",
 	    tiles = {"ball_"..colour..".png",
 	    },
-        inventory_image = "summer_ombc_"..colour..".png",
+        inventory_image = "ombc_"..colour.."_q.png",
 	    
-        wield_image  = "summer_ombc_"..colour..".png",
-	    
+        wield_image  = {"ombc_"..colour.."_q.png"},
 	    paramtype = "light",
 	    paramtype2 = "facedir",
 	    sunlight_propagates = true,
@@ -67,13 +66,5 @@ minetest.register_node("summer:ombrellone_"..colour.."_ch", {
 	    end,
 	})
 
-	minetest.register_craft({
-		output = "summer:ombrellone_"..colour.."",
-		recipe = {
-			{"", "wool:"..colour, "", },
-			{"", "cannabis:canapa_plastic", "", },
-			{"", "cannabis:canapa_fiber", "", }
-		}
-	})
-	
+
 end

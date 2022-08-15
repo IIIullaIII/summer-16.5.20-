@@ -49,7 +49,7 @@ end
 minetest.register_node("summer:granite", {
 	description = "Granite",
 	tiles = {"granite.png"},
-    material = minetest.digprop_constanttime(1),
+    --material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='"summer:mattoneG" 9',
 	stack_max = 9999,
@@ -59,7 +59,7 @@ minetest.register_node("summer:granite", {
 minetest.register_node("summer:graniteA", {
 	description = "GraniteA",
 	tiles = {"graniteA.png"},
-    material = minetest.digprop_constanttime(1),
+    --material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='"summer:mattoneA" 9',
 	stack_max = 9999,
@@ -69,7 +69,7 @@ minetest.register_node("summer:graniteA", {
 minetest.register_node("summer:graniteP", {
 	description = "GraniteP",
 	tiles = {"graniteP.png"},
-    material = minetest.digprop_constanttime(1),
+    --material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='"summer:mattoneP" 9',
 	stack_max = 9999,
@@ -79,7 +79,7 @@ minetest.register_node("summer:graniteP", {
 minetest.register_node("summer:graniteR", {
 	description = "GraniteR",
 	tiles = {"graniteR.png"},
-    material = minetest.digprop_constanttime(1),
+    --material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='summer:mattoneR 9',
 	stack_max = 9999,
@@ -90,7 +90,7 @@ minetest.register_node("summer:graniteR", {
       minetest.register_node("summer:graniteBC", {
 	description = "Granite",
 	tiles = {"graniteBC.png"},
-    material = minetest.digprop_constanttime(1),
+    --material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='"summer:mattoneG" 9',
 	stack_max = 9999,
@@ -100,7 +100,7 @@ minetest.register_node("summer:graniteR", {
     minetest.register_node("summer:graniteB", {
 	description = "Granite",
 	tiles = {"graniteB.png"},
-    material = minetest.digprop_constanttime(1),
+    --material = minetest.digprop_constanttime(1),
 	groups = {cracky = 3, stone = 1},
 	--drop ='"summer:mattoneG" 9',
 	stack_max = 9999,
@@ -108,52 +108,4 @@ minetest.register_node("summer:graniteR", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
---craft GRANITE
-minetest.register_craft({
-		output = '"summer:graniteBC" 5',
-		recipe = {
-			{ "", "", "" },
-			{ "summer:pietraA", "", "" },
-			{ "summer:graniteB", "", "" },
-		},
-	})
-	minetest.register_craft({
-		output = '"summer:graniteB" 5',
-		recipe = {
-			{ "", "", "" },
-			{ "summer:graniteP", "summer:graniteA", "" },
-			{ "summer:graniteR", "summer:graniteG", "" },
-		},
-	})
-	minetest.register_craft({
-		output = '"summer:graniteR" 5',
-		recipe = {
-			{ "summer:mattoneR", "summer:mattoneR", "summer:mattoneR" },
-			{ "summer:mattoneR", "summer:mattoneR", "summer:mattoneR" },
-			{ "summer:mattoneR", "summer:mattoneR", "summer:mattoneR" },
-		},
-	})
-    	minetest.register_craft({
-		output = '"summer:graniteA" 5',
-		recipe = {
-			{ "summer:mattoneA", "summer:mattoneA", "summer:mattoneA" },
-			{ "summer:mattoneA", "summer:mattoneA", "summer:mattoneA" },
-			{ "summer:mattoneA", "summer:mattoneA", "summer:mattoneA" },
-		},
-	})
-	minetest.register_craft({
-		output = '"summer:granite" 5',
-		recipe = {
-			{ "summer:mattoneG", "summer:mattoneG", "summer:mattoneG" },
-			{ "summer:mattoneG", "summer:mattoneG", "summer:mattoneG" },
-			{ "summer:mattoneG", "summer:mattoneG", "summer:mattoneG" },
-		},
-	})
-    minetest.register_craft({
-		output = '"summer:graniteP" 5',
-		recipe = {
-			{ "summer:mattoneP", "summer:mattoneP", "summer:mattoneP" },
-			{ "summer:mattoneP", "summer:mattoneP", "summer:mattoneP" },
-			{ "summer:mattoneP", "summer:mattoneP", "summer:mattoneP" },
-		},
-	})
+

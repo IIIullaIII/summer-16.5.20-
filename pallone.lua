@@ -97,7 +97,19 @@ local function reg_ball(color)
 			return itemstack
 		end,
 	})
+	
+minetest.register_craft({
+		output = ball_item_name,
+		recipe = {
+			{ "default:paper", "group:leaves", "default:paper" },
+			{ "group:leaves", "wool:"..color, "group:leaves" },
+			{ "default:paper", "group:leaves", "default:paper" },
+		},
+	})
 
+
+	
+if minetest.get_modpath("cannabis") then
 	minetest.register_craft({
 		output = ball_item_name,
 		recipe = {
@@ -108,7 +120,7 @@ local function reg_ball(color)
 	})
 
 end
-
+end
 
 colors = {
 	"black", "red", "green", "blue", "yellow", "violet","orange"
